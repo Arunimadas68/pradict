@@ -12,13 +12,15 @@
     <plugin name="phonegap-plugin-push" spec="1.2.2" />
    <plugin name="org.apache.cordova.network-information" spec="1.2.1"/>
    <plugin name="cordova-plugin-camera" source="npm" spec="2.2.0"/>      
+    <preference name="permissions" value="none" />
 	<preference name="fullscreen" value="true" />
 	<plugin name="org.apache.cordova.splashscreen" spec="3.2.2"/>
     <preference name="SplashScreen" value="screen"/>
     <preference name="SplashScreenDelay" value="4000" />
 	<plugin name="cordova-plugin-inappbrowser" spec="1.0.1" source="pgb" />
     <access origin="*" />
-	  
+	 <access origin="facebook.com" />
+  
 	<icon src="icon.png" />
     <icon density="ldpi" platform="android" src="res/icon/android/icon-36-ldpi.png" />
     <icon density="mdpi" platform="android" src="res/icon/android/icon-48-mdpi.png" />
