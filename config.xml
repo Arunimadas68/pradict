@@ -19,7 +19,7 @@
     <preference name="SplashScreenDelay" value="4000" />
 	<plugin name="cordova-plugin-inappbrowser" spec="1.0.1" source="pgb" />
     <access origin="*" />
-	 <access origin="facebook.com" />
+	<access origin="facebook.com" />
   
 	<icon src="icon.png" />
     <icon density="ldpi" platform="android" src="res/icon/android/icon-36-ldpi.png" />
@@ -30,7 +30,8 @@
     <splash density="mdpi" platform="android" src="res/screen/android/screen-mdpi-portrait.png" />
     <splash density="hdpi" platform="android" src="res/screen/android/screen-hdpi-portrait.png" />
     <splash density="xhdpi" platform="android" src="res/screen/android/screen-xhdpi-portrait.png" />
-    
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://www.facebook.com" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
