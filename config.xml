@@ -18,6 +18,9 @@
     <preference name="SplashScreen" value="screen"/>
     <preference name="SplashScreenDelay" value="4000" />
 	<plugin name="cordova-plugin-inappbrowser" spec="1.0.1" source="pgb" />
+	<feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+</feature>
     <access origin="*" />
 	<access origin="facebook.com" />
   
