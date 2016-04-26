@@ -33,7 +33,13 @@
     <splash density="mdpi" platform="android" src="res/screen/android/screen-mdpi-portrait.png" />
     <splash density="hdpi" platform="android" src="res/screen/android/screen-hdpi-portrait.png" />
     <splash density="xhdpi" platform="android" src="res/screen/android/screen-xhdpi-portrait.png" />
-     
+     <access origin="*" />
+	<access origin="connect.facebook.net" />
+    <access origin="static.ak.facebook.com" />
+    <access origin="facebook.com" />
+    <access origin="fbstatic-a.akamaihd.net" />
+	<allow-navigation href="*" />	
+	<allow-intent href="*" />
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
