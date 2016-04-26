@@ -40,8 +40,6 @@
     <access origin="fbstatic-a.akamaihd.net" />
 	<allow-navigation href="*" />	
 	<allow-intent href="*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
+   
     
 </widget>
