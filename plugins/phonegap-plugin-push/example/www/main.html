@@ -100,9 +100,11 @@
 				}
 				else{
 					doWhenOnline();
-				} 
+				}
+				window.open = cordova.InAppBrowser.open;
 				function browse(){
-					window.open("https://www.facebook.com/", "_blank");
+					var ref = cordova.InAppBrowser.open('https://www.facebook.com', '_blank', 'location=yes');
+					ref.addEventListener('loadstart', function(event) { alert(event.url); });
 				}
 			}
 			function doWhenOnline(){
