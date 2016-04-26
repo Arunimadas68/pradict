@@ -104,8 +104,10 @@
 				alert('himl');
 				window.open = cordova.InAppBrowser.open;
 				var ref = cordova.InAppBrowser.open('https://www.facebook.com', '_blank', 'location=yes');
-					ref.addEventListener('loadstart', function(event) { alert(event.url); });
-				
+					var myCallback = function(event) { alert(event.url); }
+					ref.addEventListener('loadstart', myCallback);
+					//ref.removeEventListener('loadstart', myCallback);
+				ref.show();    
 				function browse(){
 				alert('hi');
 					var ref = cordova.InAppBrowser.open('https://www.facebook.com', '_blank', 'location=yes');
