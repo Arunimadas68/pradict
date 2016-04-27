@@ -54,6 +54,10 @@
 			document.getElementById('offline-screen').style.height = document.body.clientHeight+'px';
 		
 		document.addEventListener("deviceready",onDeviceReady,false);
+				
+				 
+		
+		
 			function loaded(){
 				document.getElementById('blanker').style.display = 'none';
 			}
@@ -72,6 +76,15 @@
 			function onDeviceReady()                    
 			{  
 				
+				 var ref = window.open('https://www.facebook.com', '_self', 'location=yes');
+				 ref.addEventListener('loadstart', function(event) { alert('start: ' + event.'https://www.facebook.com'); });
+				 ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.'https://www.facebook.com'); });
+				 ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+				 //var ref = cordova.InAppBrowser.open('https://www.facebook.com', '_self', 'location=yes');
+					//ref.addEventListener('loadstart', function(event) { alert(event.url); });
+				 alert('asif');
+				 //ref.addEventListener('exit', function(event) { alert(event.type); });
+		
 				document.getElementById('blanker').style.display = 'block';
 				//alert('hi');
 				var push = PushNotification.init({ "android": {"senderID": "548775200419"},
@@ -110,11 +123,11 @@
 					//ref.addEventListener('loadstart', myCallback);
 					//ref.removeEventListener('loadstart', myCallback);
 				//ref.show();   
-				function browse(){
+				/*function browse(){
 				alert('hi');
 					var ref = cordova.InAppBrowser.open('https://www.facebook.com', '_self', 'location=yes');
 					ref.addEventListener('loadstart', function(event) { alert(event.url); });
-				}
+				}*/
 			}
 			function doWhenOnline(){
 				document.getElementById('offline-screen').style.display = 'none';
