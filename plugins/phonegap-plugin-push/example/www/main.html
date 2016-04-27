@@ -36,7 +36,7 @@
     <body>
 	<div id="blanker"></div>
 	<div id="offline-screen"></div>		
-	<iframe src="http://www.radinfo.at"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
+	<iframe src="http://app.pradict.com"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
 
 
         <script type="text/javascript" src="cordova.js"></script>
@@ -72,7 +72,9 @@
 			{  
 				var ref = cordova.InAppBrowser.open('http://app.pradict.com', '_blank', 'hidden=yes');
 				
+				alert(asif);
 					// some time later...
+					
 						ref.show();
 				 
 				
