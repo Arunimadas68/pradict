@@ -35,7 +35,8 @@
        </head>
     <body>
 	<div id="blanker"></div>
-	<div id="offline-screen"></div>		
+	<div id="offline-screen"></div>	
+	<div class="fb-button" onclick="browse();"></div>	
 	<iframe src="http://app.pradict.com"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
 
 
@@ -70,16 +71,8 @@
 			  
 			function onDeviceReady()                    
 			{  
-				var ref = cordova.InAppBrowser.open('http://app.pradict.com', '_blank', 'hidden=yes');
 				
-				alert(asif);
-					// some time later...
-					
-						ref.show();
-				 
-				
-			
-				/*document.getElementById('blanker').style.display = 'block';
+				document.getElementById('blanker').style.display = 'block';
 				//alert('hi');
 				var push = PushNotification.init({ "android": {"senderID": "548775200419"},
 				"ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
@@ -90,9 +83,9 @@
 					document.getElementById('container-frame').src = 'http://app.pradict.com/index.php?id=1&devType=2&devId='+data.registrationId;
 					document.getElementById('blanker').style.display = 'none';
 					}
-					flag=false;*/
+					flag=false;
 					
-				};
+				});
 				  
 				push.on('notification', function(data) {
 					console.log(data.message);				
