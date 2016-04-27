@@ -75,12 +75,12 @@
 			  
 			function onDeviceReady()                    
 			{  
-				 var ref = cordova.InAppBrowser.open('https://www.facebook.com', '_self', 'location=yes');
+				 var ref = cordova.InAppBrowser.open('http://app.pradict.com', '_self', 'location=yes');
 				//var ref = window.open('https://www.facebook.com', '_self', 'location=yes');
 				 ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
-				 ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.event.url); });
-				 ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-				 ref.addEventListener('exit', function(event) { alert(event.type); });
+				 //ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.event.url); });
+				 //ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+				 //ref.addEventListener('exit', function(event) { alert(event.type); });
 					//ref.addEventListener('loadstart', function(event) { alert(event.url); });
 				 alert('asif');
 				 //ref.addEventListener('exit', function(event) { alert(event.type); });
