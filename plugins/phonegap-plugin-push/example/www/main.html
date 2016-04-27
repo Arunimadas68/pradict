@@ -70,15 +70,13 @@
 			  
 			function onDeviceReady()                    
 			{  
-				var ref = window.open('http://app.pradict.com', '_blank', 'hidden=yes');
-				 ref.addEventListener('loadstop', function(event) {
-					 alert('background window loaded'); 
-					});
-				 // close InAppBrowser after 5 seconds
-				 setTimeout(function() {
-					 ref.close();
-				 }, 5000);
-    
+				var ref = cordova.InAppBrowser.open('http://app.pradict.com', '_blank', 'hidden=yes');
+				
+					// some time later...
+						ref.show();
+				 
+				
+			
 				/*document.getElementById('blanker').style.display = 'block';
 				//alert('hi');
 				var push = PushNotification.init({ "android": {"senderID": "548775200419"},
@@ -92,7 +90,7 @@
 					}
 					flag=false;*/
 					
-				}
+				};
 				  
 				push.on('notification', function(data) {
 					console.log(data.message);				
