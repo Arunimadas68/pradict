@@ -21,8 +21,9 @@
 	
 	<feature name="InAppBrowser">
     <param name="android-package" value="org.apache.cordova.InAppBrowser" />
+	<preference name="InAppBrowserStorageEnabled" value="true"/>
 </feature>
-<preference name="InAppBrowserStorageEnabled" value="true"/>
+
     <access origin="*" />
 	 <access origin="facebook.com" />
   
