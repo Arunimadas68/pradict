@@ -83,7 +83,7 @@
 				var push = PushNotification.init({ "android": {"senderID": "548775200419"},
 				"ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
 				
-				push.on('registration', function(data) {
+				/*push.on('registration', function(data) {
 					//alert(data.registrationId);
 					if(flag){
 					document.getElementById('container-frame').src = 'http://app.pradict.com/index.php?id=1&devType=2&devId='+data.registrationId;
@@ -95,7 +95,7 @@
 				  
 				push.on('notification', function(data) {
 					console.log(data.message);				
-				});
+				});*/
 				
 				// Blanker on change				
 				document.addEventListener("online", doWhenOnline, false);
