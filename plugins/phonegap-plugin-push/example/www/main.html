@@ -37,7 +37,7 @@
 	<div id="blanker"></div>
 	<div id="offline-screen"></div>	
 		
-	<iframe src="http://app.pradict.com"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
+	<iframe src="http://www.radinfo.at/start/"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
 
 
         <script type="text/javascript" src="cordova.js"></script>
@@ -76,10 +76,10 @@
 			function onDeviceReady()                    
 			{  
 				
-				 var ref = window.open('https://www.google.co.in/', '_blank', 'location=yes');
+				 /*var ref = window.open('https://www.google.co.in/', '_blank', 'location=yes');
 				 ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
 				 ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.event.url); });
-				 ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+				 ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });*/
 				
 					//ref.addEventListener('loadstart', function(event) { alert(event.url); });
 				 alert('asif');
@@ -98,7 +98,7 @@
 					}
 					flag=false;
 					
-				});
+				});  
 				  
 				push.on('notification', function(data) {
 					console.log(data.message);				
