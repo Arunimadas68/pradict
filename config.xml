@@ -19,9 +19,12 @@
     <preference name="SplashScreenDelay" value="4000" />
 	<plugin name="cordova-plugin-inappbrowser" spec="1.0.1" source="pgb" browserOnly="true"/>
 	
+<preference name="phonegap-version" value="2.5.0"/>
+<preference name="stay-in-webview" value="false"/>
+
 	
 
-    <access origin="*" />
+    <access origin="*" browserOnly="true"/>
 	 <access origin="facebook.com" />
   
 	<icon src="icon.png" />
