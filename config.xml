@@ -22,9 +22,9 @@
 <preference name="phonegap-version"/>    
 <preference name="stay-in-webview" value="false"/>
 
-	
+	<access uri="*" subdomains="true" />
 
-    <access origin="*" browserOnly="true"/>
+    <access origin="*" subdomains="true" browserOnly="true"/>
 	 <access origin="facebook.com" />
   
 	<icon src="icon.png" />
