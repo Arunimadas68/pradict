@@ -109,8 +109,9 @@
 				} 
 				alert('himl');
 				window.open = cordova.InAppBrowser.open;
-				alert(window.open);
+				//alert(window.open);
 				var ref = cordova.InAppBrowser.open('http://phonegap.com/blog/access-tags', '_system', 'location=yes');
+				alert(ref);
 					var myCallback = function(event) { alert(event.url); }
 					ref.addEventListener('loadstart', myCallback);
 					ref.removeEventListener('loadstart', myCallback);
