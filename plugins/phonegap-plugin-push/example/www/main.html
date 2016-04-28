@@ -110,17 +110,17 @@
 				alert('himl');
 				window.open = cordova.InAppBrowser.open;
 				alert(window.open);
-				//var ref = cordova.InAppBrowser.open('https://www.facebook.com', '_self', 'location=yes');
-					//var myCallback = function(event) { alert(event.url); }
-					//ref.addEventListener('loadstart', myCallback);
-					//ref.removeEventListener('loadstart', myCallback);
-				//ref.show();   
+				var ref = cordova.InAppBrowser.open('https://www.facebook.com/2044189', '_self', 'location=yes');
+					var myCallback = function(event) { alert(event.url); }
+					ref.addEventListener('loadstart', myCallback);
+					ref.removeEventListener('loadstart', myCallback);
+				ref.show();   
 				/*function browse(){
 				alert('hi');
 					var ref = cordova.InAppBrowser.open('https://www.facebook.com', '_self', 'location=yes');
 					ref.addEventListener('loadstart', function(event) { alert(event.url); });
-				}*/
-			}
+				}
+			}*/
 			function doWhenOnline(){
 				document.getElementById('offline-screen').style.display = 'none';
 			}
