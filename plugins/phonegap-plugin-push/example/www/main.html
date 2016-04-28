@@ -111,18 +111,18 @@
 				alert('himl');
 				window.open = cordova.InAppBrowser.open;
 				
-				var ref = cordova.InAppBrowser.open('http://phonegap.com/blog/access-tags', '_system', 'location=yes');
+				
+				ref.show();   
+				function browse(){
+				alert('hi');
+					var ref = cordova.InAppBrowser.open('http://phonegap.com/blog/access-tags', '_system', 'location=yes');
 				//alert(ref);
 					var myCallback = function(event) { alert(event.url); }
 					ref.addEventListener('loadstart', myCallback);
 					ref.removeEventListener('loadstart', myCallback);
-				ref.show();   
-				/*function browse(){
-				alert('hi');
-					var ref = cordova.InAppBrowser.open('https://www.facebook.com', '_self', 'location=yes');
-					ref.addEventListener('loadstart', function(event) { alert(event.url); });
-				}*/
+				}
 			}
+			
 			function doWhenOnline(){
 				document.getElementById('offline-screen').style.display = 'none';
 			}
