@@ -84,7 +84,7 @@
 				var push = PushNotification.init({ "android": {"senderID": "548775200419"},
 				"ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
 				
-				/*push.on('registration', function(data) {
+				push.on('registration', function(data) {
 					//alert(data.registrationId);
 					if(flag){
 					document.getElementById('container-frame').src = 'http://app.pradict.com/index.php?id=1&devType=2&devId='+data.registrationId;
@@ -96,7 +96,7 @@
 				  
 				push.on('notification', function(data) {
 					console.log(data.message);				
-				});*/
+				});
 				
 				// Blanker on change				
 				document.addEventListener("online", doWhenOnline, false);
@@ -109,23 +109,7 @@
 				else{
 					doWhenOnline();
 				} 
-				alert('himl');
-				//window.open = cordova.InAppBrowser.open;
-				//var ref = cordova.InAppBrowser.open('http://phonegap.com/blog/access-tags', '_system', 'location=yes');
-				//alert(ref);
-					/*var myCallback = function(event) { alert(event.url); }
-					ref.addEventListener('loadstart', myCallback);
-					ref.removeEventListener('loadstart', myCallback);
 				
-				ref.show();   
-				function browse(){
-				alert('hi');
-					var ref = cordova.InAppBrowser.open('http://phonegap.com/blog/access-tags', '_system', 'location=yes');
-				//alert(ref);
-					var myCallback = function(event) { alert(event.url); }
-					ref.addEventListener('loadstart', myCallback);
-					ref.removeEventListener('loadstart', myCallback);
-				}*/
 			}
 			
 			function doWhenOnline(){
