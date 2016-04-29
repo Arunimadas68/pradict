@@ -11,17 +11,37 @@
     <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
     <plugin name="phonegap-plugin-push" spec="1.2.2" />
    <plugin name="org.apache.cordova.network-information" spec="1.2.1"/>
-   <plugin name="cordova-plugin-camera" source="npm" spec="2.2.0"/>      
+   <plugin name="cordova-plugin-camera" source="npm" spec="2.2.0"/> 
+	<plugin name="org.apache.cordova.splashscreen" spec="3.2.2"/>   
+	<plugin name="cordova-plugin-inappbrowser" spec="1.0.1" source="pgb" browserOnly="true"/>
+	<plugin name="org.apache.cordova.device" />
+    <plugin name="org.apache.cordova.device-orientation" />
+    <plugin name="org.apache.cordova.dialogs" />
+    <plugin name="org.apache.cordova.file" />
+    <plugin name="org.apache.cordova.file-transfer" />
+    <plugin name="org.apache.cordova.globalization" />   
+	
+	
     <preference name="permissions" value="none" />
 	<preference name="fullscreen" value="true" />
-	<plugin name="org.apache.cordova.splashscreen" spec="3.2.2"/>
-    <preference name="SplashScreen" value="screen"/>
-    <preference name="SplashScreenDelay" value="4000" />
-	<plugin name="cordova-plugin-inappbrowser" spec="1.0.1" source="pgb" browserOnly="true"/>
+	<preference name="SplashScreen" value="splash"/>
+    <preference name="SplashScreenDelay" value="10000" />
+	<preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="true" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-installLocation" value="auto" />
 	
-<preference name="phonegap-version" />
-<preference name="stay-in-webview" value="false"/>
-<access origin="*" browserOnly="true"/>
+
 
 	
 
