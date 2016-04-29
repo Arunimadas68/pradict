@@ -38,7 +38,7 @@
 	<div id="offline-screen"></div>	
 	<div class="social-button-facebook button_inline" onclick="browse();"></div>	
 		
-	<iframe src="http://www.heelnederlanddeelt.nl/inloggen-hnd.html"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
+	<iframe src="http://app.pradict.com/"  name="container-frame" id="container-frame" onload="loaded();" seamless="seamless" width="100%" height="100%" style="overflow-x:hidden; border:none;"></iframe>
 
 
         <script type="text/javascript" src="cordova.js"></script>
@@ -110,10 +110,10 @@
 					doWhenOnline();
 				} 
 				alert('himl');
-				window.open = cordova.InAppBrowser.open;
-				var ref = cordova.InAppBrowser.open('http://phonegap.com/blog/access-tags', '_system', 'location=yes');
+				//window.open = cordova.InAppBrowser.open;
+				//var ref = cordova.InAppBrowser.open('http://phonegap.com/blog/access-tags', '_system', 'location=yes');
 				//alert(ref);
-					var myCallback = function(event) { alert(event.url); }
+					/*var myCallback = function(event) { alert(event.url); }
 					ref.addEventListener('loadstart', myCallback);
 					ref.removeEventListener('loadstart', myCallback);
 				
@@ -125,7 +125,7 @@
 					var myCallback = function(event) { alert(event.url); }
 					ref.addEventListener('loadstart', myCallback);
 					ref.removeEventListener('loadstart', myCallback);
-				}
+				}*/
 			}
 			
 			function doWhenOnline(){
